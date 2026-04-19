@@ -26,7 +26,7 @@ export function Header() {
   ];
 
   return (
-    <div className="bg-teal-800 flex justify-center px-4">
+    <div className="bg-teal-800/50 border-b border-teal-900 w-full flex justify-center px-4 fixed top-0 left-0 z-99">
         <NavigationMenu>
             <NavigationMenuList>
                 {navitems.map((item) => (
