@@ -1,17 +1,22 @@
 'use client'
 
-import { Countdown} from "@/components/ui/Countdown";
+import { useEffect, useState } from "react";
+import { Countdown } from "@/components/ui/Countdown";
 import Image from "next/image";
 
 type props = {
     title: string;
-    subtitle: string,
+    subtitle: string;
     data?: Date;
 }
 
+export function Cover({ title, subtitle, data }: props) {
+    const [formattedData, setFormattedData] = useState("");
 
-export function Cover ({title, subtitle, data = new Date()}: props) {
-    const formattedData = data.toLocaleDateString('it-IT', {});
+    useEffect(() => {
+        const current = data ?? new Date();
+        setFormattedData(current.toLocaleDateString("it-IT", {}));
+    }, [data]);
 
     return (
         <div className="h-screen flex items-center justify-center relative">
