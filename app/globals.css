@@ -128,3 +128,12 @@
     @apply font-sans;
   }
 }
+
+
+
+.background {
+  background-image: linear-gradient(to bottom, rgba(20 103 139 0.4 / 50%), rgb(0 0 0)), url("@/public/foto-sfondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

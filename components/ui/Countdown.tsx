@@ -32,7 +32,7 @@ export function Countdown () {
     }, [data]);
 
     return (
-        <div className="h-screen flex items-center justify-center" >
+        <div className="flex items-center justify-center" >
             <div className="flex gap-4">
                 <span className="bg-gray-100/20 py-2 px-4 rounded-lg">{time.days}</span>
                 <span className="bg-gray-100/20 py-2 px-4 rounded-lg">{time.hours}</span>

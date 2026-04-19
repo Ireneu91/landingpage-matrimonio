@@ -19,7 +19,7 @@ export function Cover({ title, subtitle, data }: props) {
     }, [data]);
 
     return (
-        <div className="h-screen flex items-center justify-center relative">
+        <div className="h-screen flex flex-col flex-auto items-center justify-center relative  bg-linear-to-r/longer from-indigo-500 to-teal-400 background">
             {/* <Image alt="eccoci" src="/assets/countdown.png" className="absolute inset-0 w-full h-full" /> */}
 
             <h1>{title}</h1>
